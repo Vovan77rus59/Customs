@@ -11,5 +11,7 @@
 # limitations under the License.
 
 # include apps
-PRODUCT_PACKAGES := \
-	XiaomiParts
+PRODUCT_PACKAGES += \
+    GoogleCamera \
+    XiaomiParts
+
