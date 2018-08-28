@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += \
 	$(DWB_PATH)/lib/arm/libtrack.so:system/priv-app/DigitalWellbeing/lib/arm/libtrack.so \
 	$(DWB_PATH)/lib/arm/libjni_front_panorama_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_front_panorama_camera2.so \
 	$(LOCAL_PATH)/DigitalWellbeing/system/etc/sysconfig/wellbeing-enabler.xml:system/etc/sysconfig/wellbeing-enabler.xml
-
+	
 # DigitalWellbeing permissions
 PRODUCT_COPY_FILES += \
-	$(VENDOR_PATH)/DigitalWellbeingApp/com.google.android.apps.wellbeing.permissions.xml:system/etc/permissions/com.google.android.apps.wellbeing.permissions.xml
+	$(LOCAL_PATH)/DigitalWellbeing/system/etc/permissions/privapp-permissions-wellbeing.xml:system/etc/permissions/privapp-permissions-wellbeing.xml
+	
