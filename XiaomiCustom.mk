@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 	XiaomiParts
 
 # MiuiCamera/system/etc
+PRODUCT_COPY_FILES += \
 	$(MICAM_PATH)/device_features/sagit.xml:system/etc/device_features/sagit.xml \
 	$(MICAM_PATH)/age_gender_bg:system/etc/age_gender_bg \
 	$(MICAM_PATH)/android_model_facea.dat:system/etc/android_model_facea.dat \
@@ -48,6 +49,7 @@ PRODUCT_PACKAGES += \
 	$(MICAM_PATH)/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat 
 
 # MiuiCamera/system/priv-app/MiuiCamera
+PRODUCT_COPY_FILES += \
 	$(MIPRIV_PATH)/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk \
 	$(MIPRIV_PATH)/lib/arm64/libblurbuster.so:system/priv-app/MiuiCamera/lib/arm64/libblurbuster.so \
 	$(MIPRIV_PATH)/lib/arm64/libcamera2ndk.so:system/priv-app/MiuiCamera/lib/arm64/libcamera2ndk.so \
