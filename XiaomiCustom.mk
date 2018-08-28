@@ -36,12 +36,12 @@ PRODUCT_COPY_FILES += \
 	$(DWB_PATH)/lib/arm/libtrack.so:system/priv-app/DigitalWellbeing/lib/arm/libtrack.so \
 	$(DWB_PATH)/lib/arm/libjni_front_panorama_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_front_panorama_camera2.so \
 	$(LOCAL_PATH)/DigitalWellbeing/system/etc/sysconfig/wellbeing-enabler.xml:system/etc/sysconfig/wellbeing-enabler.xml
-	
+
 # DigitalWellbeing permissions
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/DigitalWellbeing/system/etc/permissions/privapp-permissions-wellbeing.xml:system/etc/permissions/privapp-permissions-wellbeing.xml
-	
-# MiuiCamera/system/etc by Danilo38
+
+# MiuiCamera/system/etc
 	$(MICAM_PATH)/device_features/sagit.xml:system/etc/device_features/sagit.xml \
 	$(MICAM_PATH)/age_gender_bg:system/etc/age_gender_bg \
 	$(MICAM_PATH)/android_model_facea.dat:system/etc/android_model_facea.dat \
@@ -66,4 +66,45 @@ PRODUCT_COPY_FILES += \
 	$(MICAM_PATH)/people_gender.dat:system/etc/people_gender.dat \
 	$(MICAM_PATH)/score_bg.png:system/etc/score_bg.png \
 	$(MICAM_PATH)/sdm_ys_32p_120_21_5_perturb50.bin:system/etc/sdm_ys_32p_120_21_5_perturb50.bin \
-	$(MICAM_PATH)/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat 
+	$(MICAM_PATH)/watermark_font_2300_3199.dat:system/etc/watermark_font_2300_3199.dat
+
+# MiuiCamera/system/priv-app/MiuiCamera
+	$(MIPRIV_PATH)/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk \
+	$(MIPRIV_PATH)/lib/arm64/libblurbuster.so:system/priv-app/MiuiCamera/lib/arm64/libblurbuster.so \
+	$(MIPRIV_PATH)/lib/arm64/libcamera2ndk.so:system/priv-app/MiuiCamera/lib/arm64/libcamera2ndk.so \
+	$(MIPRIV_PATH)/lib/arm64/libCameraEffectJNI.so:system/priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so \
+	$(MIPRIV_PATH)/lib/arm64/libcutils.so:system/priv-app/MiuiCamera/lib/arm64/libcutils.so \
+	$(MIPRIV_PATH)/lib/arm64/libfilterpack_facedetect.so:system/priv-app/MiuiCamera/lib/arm64/libfilterpack_facedetect.so \
+	$(MIPRIV_PATH)/lib/arm64/libimscamera_jni.so:system/priv-app/MiuiCamera/lib/arm64/libimscamera_jni.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_blurbuster.so:system/priv-app/MiuiCamera/lib/arm64/libjni_blurbuster.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_chromaflash.so:system/priv-app/MiuiCamera/lib/arm64/libjni_chromaflash.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_clearsight.so:system/priv-app/MiuiCamera/lib/arm64/libjni_clearsight.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_dualcamera.so:system/priv-app/MiuiCamera/lib/arm64/libjni_dualcamera.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_filtergenerator.so:system/priv-app/MiuiCamera/lib/arm64/libjni_filtergenerator.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_hazebuster.so:system/priv-app/MiuiCamera/lib/arm64/libjni_hazebuster.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_load_serinum.so:system/priv-app/MiuiCamera/lib/arm64/libjni_load_serinum.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_makeupV2.so:system/priv-app/MiuiCamera/lib/arm64/libjni_makeupV2.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_optizoom.so:system/priv-app/MiuiCamera/lib/arm64/libjni_optizoom.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_pacprocessor.so:system/priv-app/MiuiCamera/lib/arm64/libjni_pacprocessor.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_resource_drm.so:system/priv-app/MiuiCamera/lib/arm64/libjni_resource_drm.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_seestraight.so:system/priv-app/MiuiCamera/lib/arm64/libjni_seestraight.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_sharpshooter.so:system/priv-app/MiuiCamera/lib/arm64/libjni_sharpshooter.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_stillmore.so:system/priv-app/MiuiCamera/lib/arm64/libjni_stillmore.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_trueportrait.so:system/priv-app/MiuiCamera/lib/arm64/libjni_trueportrait.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_truescanner_v2.so:system/priv-app/MiuiCamera/lib/arm64/libjni_truescanner_v2.so \
+	$(MIPRIV_PATH)/lib/arm64/libjni_ubifocus.so:system/priv-app/MiuiCamera/lib/arm64/libjni_ubifocus.so \
+	$(MIPRIV_PATH)/lib/arm64/libjnigraphics.so:system/priv-app/MiuiCamera/lib/arm64/libjnigraphics.so \
+	$(MIPRIV_PATH)/lib/arm64/libmmcamera_faceproc.so:system/priv-app/MiuiCamera/lib/arm64/libmmcamera_faceproc.so \
+	$(MIPRIV_PATH)/lib/arm64/libmmcamera_faceproc2.so:system/priv-app/MiuiCamera/lib/arm64/libmmcamera_faceproc2.so \
+	$(MIPRIV_PATH)/lib/arm64/libmorpho_group_portrait.so:system/priv-app/MiuiCamera/lib/arm64/libmorpho_group_portrait.so \
+	$(MIPRIV_PATH)/lib/arm64/libmorpho_groupshot.so:system/priv-app/MiuiCamera/lib/arm64/libmorpho_groupshot.so \
+	$(MIPRIV_PATH)/lib/arm64/libmorpho_memory_allocator.so:system/priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so \
+	$(MIPRIV_PATH)/lib/arm64/libmorpho_panorama.so:system/priv-app/MiuiCamera/lib/arm64/libmorpho_panorama.so \
+	$(MIPRIV_PATH)/lib/arm64/libmorpho_panorama_gp.so:system/priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp.so \
+	$(MIPRIV_PATH)/lib/arm64/libscveFaceLandmarks.so:system/priv-app/MiuiCamera/lib/arm64/libscveFaceLandmarks.so \
+	$(MIPRIV_PATH)/lib/arm64/libscveFaceLandmarks_stub.so:system/priv-app/MiuiCamera/lib/arm64/libscveFaceLandmarks_stub.so \
+	$(MIPRIV_PATH)/lib/arm64/libscveFaceRecognition.so:system/priv-app/MiuiCamera/lib/arm64/libscveFaceRecognition.so \
+	$(MIPRIV_PATH)/lib/arm64/libsurfaceflinger.so:system/priv-app/MiuiCamera/lib/arm64/libsurfaceflinger.so \
+	$(MIPRIV_PATH)/lib/arm64/libsurfaceflinger_ddmconnection.so:system/priv-app/MiuiCamera/lib/arm64/libsurfaceflinger_ddmconnection.so \
+	$(MIPRIV_PATH)/lib/arm64/libts_detected_face_jni.so:system/priv-app/MiuiCamera/lib/arm64/libts_detected_face_jni.so \
+	$(MIPRIV_PATH)/lib/arm64/libts_face_beautify_jni.so:system/priv-app/MiuiCamera/lib/arm64/libts_face_beautify_jni.so
