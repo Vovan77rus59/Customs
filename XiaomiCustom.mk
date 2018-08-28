@@ -1,3 +1,5 @@
+# Copyright (C) 2018 The LineageOS Project
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -10,24 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+DWB_PATH := $(LOCAL_PATH)/DigitalWellbeing/system/priv-app/DigitalWellbeing
+
 # include apps
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
 	GoogleCamera \
 	XiaomiParts
+
 # DigitalWellbeing
 PRODUCT_COPY_FILES += \
-	$(DWB_PATH)/DigitalWellbeing.apk:system/priv-app/DigitalWellbeing/DigitalWellbeing.apk
-	$(DWB_PATH)/lib/arm/libfyusenet.so:system/priv-app/DigitalWellbeing/lib/arm/libfyusenet.so
-	$(DWB_PATH)/lib/arm/libHW_Pano_f.so:system/priv-app/DigitalWellbeing/lib/arm/libHW_Pano_f.so
-	$(DWB_PATH)/lib/arm/libjni_mrc_cg_filters_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_mrc_cg_filters_camera2.so
-	$(DWB_PATH)/lib/arm/libIvw35.so:system/priv-app/DigitalWellbeing/lib/arm/libIvw35.so
-	$(DWB_PATH)/lib/arm/libmorpho_memory_allocator.so:system/priv-app/DigitalWellbeing/lib/arm/libmorpho_memory_allocator.so
-	$(DWB_PATH)/lib/arm/libJniVoiceCapture.so:system/priv-app/DigitalWellbeing/lib/arm/libJniVoiceCapture.so
-	$(DWB_PATH)/lib/arm/libmorpho_panorama_gp.so:system/priv-app/DigitalWellbeing/lib/arm/libmorpho_panorama_gp.so
-	$(DWB_PATH)/lib/arm/libTargetTracking.so:system/priv-app/DigitalWellbeing/lib/arm/libTargetTracking.so
-	$(DWB_PATH)/lib/arm/libscanner.so:system/priv-app/DigitalWellbeing/lib/arm/libscanner.so
-	$(DWB_PATH)/lib/arm/libtrack.so:system/priv-app/DigitalWellbeing/lib/arm/libtrack.so
-	$(DWB_PATH)/lib/arm/libjni_front_panorama_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_front_panorama_camera2.so
+	$(DWB_PATH)/DigitalWellbeing.apk:system/priv-app/DigitalWellbeing/DigitalWellbeing.apk \
+	$(DWB_PATH)/lib/arm/libfyusenet.so:system/priv-app/DigitalWellbeing/lib/arm/libfyusenet.so \
+	$(DWB_PATH)/lib/arm/libHW_Pano_f.so:system/priv-app/DigitalWellbeing/lib/arm/libHW_Pano_f.so \
+	$(DWB_PATH)/lib/arm/libjni_mrc_cg_filters_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_mrc_cg_filters_camera2.so \
+	$(DWB_PATH)/lib/arm/libIvw35.so:system/priv-app/DigitalWellbeing/lib/arm/libIvw35.so \
+	$(DWB_PATH)/lib/arm/libmorpho_memory_allocator.so:system/priv-app/DigitalWellbeing/lib/arm/libmorpho_memory_allocator.so \
+	$(DWB_PATH)/lib/arm/libJniVoiceCapture.so:system/priv-app/DigitalWellbeing/lib/arm/libJniVoiceCapture.so \
+	$(DWB_PATH)/lib/arm/libmorpho_panorama_gp.so:system/priv-app/DigitalWellbeing/lib/arm/libmorpho_panorama_gp.so \
+	$(DWB_PATH)/lib/arm/libTargetTracking.so:system/priv-app/DigitalWellbeing/lib/arm/libTargetTracking.so \
+	$(DWB_PATH)/lib/arm/libscanner.so:system/priv-app/DigitalWellbeing/lib/arm/libscanner.so \
+	$(DWB_PATH)/lib/arm/libtrack.so:system/priv-app/DigitalWellbeing/lib/arm/libtrack.so \
+	$(DWB_PATH)/lib/arm/libjni_front_panorama_camera2.so:system/priv-app/DigitalWellbeing/lib/arm/libjni_front_panorama_camera2.so \
 	$(LOCAL_PATH)/DigitalWellbeing/system/etc/sysconfig/wellbeing-enabler.xml:system/etc/sysconfig/wellbeing-enabler.xml
 
 # DigitalWellbeing permissions
