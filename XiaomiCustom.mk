@@ -12,4 +12,5 @@
 
 # include apps
 PRODUCT_PACKAGES := \
+	GoogleCamera \
 	XiaomiParts
