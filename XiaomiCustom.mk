@@ -11,3 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# include apps
+PRODUCT_PACKAGES += \
+GoogleCamera
+
+# Pixel Bootanimation
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/PixelBootanimation/system/media/bootanimation.zip:system/media/bootanimation.zip
