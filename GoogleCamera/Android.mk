@@ -17,15 +17,11 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleCamera
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := MGC_5.3.015_4.apk
+LOCAL_SRC_FILES := MGC_5.3.015_A7.0+.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
-LOCAL_OVERRIDES_PACKAGES := \
-    SnapdragonCamera \
-    Snap \
-    Camera2 \
-    MiuiCamera
+LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2 MiuiCamera
 include $(BUILD_PREBUILT)

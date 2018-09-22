@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+VENDOR_PATH := vendor/XiaomiCustom
+
 # include apps
 PRODUCT_PACKAGES += \
 GoogleCamera
 
 # Pixel Bootanimation
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/PixelBootanimation/system/media/bootanimation.zip:system/media/bootanimation.zip
+	$(VENDOR_PATH)/PixelBootanimation/system/media/bootanimation.zip:system/media/bootanimation.zip
